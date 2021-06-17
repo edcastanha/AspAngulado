@@ -1,0 +1,26 @@
+<app-Titulo [titulo]="titulo"></app-Titulo>
+
+<div class="content">
+
+   <div class="row row-cols-1 row-cols-md-3 g-4">
+
+    <div class="col"  *ngFor="let postagem of post">
+      <div class="card h-100">
+        <img src="../../public/todos.png" class="card-img-top" alt="{{postagem.Sloga}}">
+
+        <div class="card-body">
+          <h5 class="card-title">{{postagem.Titulo}}</h5>
+          <p class="card-text" >{{postagem.Texto}}</p>
+        </div>
+
+        <div class="card-footer">
+          <small class="text-muted">Artigo:{{postagem.Id}} - {{postagem.Sloga}}</small>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

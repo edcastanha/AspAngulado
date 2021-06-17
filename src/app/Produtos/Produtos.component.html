@@ -1,0 +1,20 @@
+<app-Titulo [titulo]="titulo"></app-Titulo>
+
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">PRODUTO</th>
+      <th scope="col">CATEGORIA</th>
+      <th scope="col">VALOR (R$)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let produto of produtos">
+      <th scope="row">{{produto.Id}}</th>
+      <td>{{produto.Produto}}</td>
+      <td>{{produto.Categoria}}</td>
+      <td>R$ {{produto.Valor}} por {{produto.Unidade}}</td>
+    </tr>
+</table>
